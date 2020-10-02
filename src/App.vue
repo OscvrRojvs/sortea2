@@ -1,17 +1,30 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <b-container>
+      <b-row>
+        <b-col>
+          <Header></Header>
+        </b-col>
+        <b-col>
+          <Premio></Premio>
+        </b-col>
+      </b-row>
+    </b-container><hr>
+    <Participantes></Participantes>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Participantes from './components/Participantes.vue'
+import Premio from './components/Premio.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Participantes,
+    Premio
   }
 }
 </script>
@@ -23,6 +36,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 5px;
 }
 </style>

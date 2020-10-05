@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <div class="jumbotron">
+      <div class="jumbo">
         <h1 class="display-4">{{title}}</h1>
         <p class="lead">LA NUEVA FORMA DE REALIZAR SORTEOS</p>
       </div>
@@ -20,18 +20,19 @@ export default {
 </script>
 
 <style scoped>
-.jumbotron {
+.jumbo {
     background-color: white;
     height: 180px;
+    margin-top: 20px;
 }
 
-.jumbotron h1 {
+.jumbo h1 {
     font-family: 'Monoton', cursive;
-    font-size: 3rem;
+    font-size: 4rem;
     color: goldenrod;
 }
 
-.jumbotron p {
+.jumbo p {
     font-family: 'Luckiest Guy', cursive;
     font-size: 2rem;
     color: #083D77;

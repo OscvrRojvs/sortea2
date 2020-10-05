@@ -23,13 +23,16 @@
           </b-col>
           <b-col>
             <div id="button">
-              <button
-                type="button"
+              <b-button
+                pill
+                variant="info"
+                size="lg"
                 @click="sorteo()"
-                class="btn btn-secondary btn-dark btn-lg"
                 v-b-modal="'my-modal'"
-              >Iniciar Sorteo</button>
-              <b-modal id="my-modal"><h1>{{win}}</h1></b-modal>
+              >Iniciar Sorteo</b-button>
+              <b-modal id="my-modal">
+                <h1>¡¡ {{win}} !!</h1>
+              </b-modal>
             </div>
           </b-col>
         </b-row>
@@ -65,22 +68,22 @@ export default {
 
 <style scope>
 .input-group input {
-  border: solid 3px rgb(129, 122, 78);
+  border: solid 3px rgb(190, 173, 58);
 }
 .input-group .comp {
-  border: solid 3px rgb(129, 122, 78);
+  border: solid 3px rgb(190, 173, 58);
   border-radius: 10px 11px 11px 10px;
-  box-shadow: -7px 10px 16px -8px rgba(236, 167, 44, 1);
   padding-bottom: 5px;
 }
 .list-group .list-group-item {
   font-family: "Righteous", cursive;
   font-size: x-large;
+  color: #083d77;
 }
-h1{
-  font-family: 'Monoton', cursive;
-    color: goldenrod;
-    text-align: center;
-    font-size: 4rem;
+h1 {
+  font-family: "Monoton", cursive;
+  color: goldenrod;
+  text-align: center;
+  font-size: 7rem;
 }
 </style>
